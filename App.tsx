@@ -1,4 +1,4 @@
-import { Alert, StyleSheet, Text, View } from 'react-native';
+import { Alert, Image, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -17,6 +17,7 @@ const App = () => {
         amet, consectetur adisipiscing elit, sed do eiusmod tempor incididunt ut
         lahore labore et dolore magna aliqua.
       </Text>
+      <Image  source={require("./src/download.png")} style={styles.image}/>
     </SafeAreaView>
   );
 };
@@ -33,4 +34,5 @@ const styles = StyleSheet.create({
   },
   textheading: { fontSize: 20, textAlign: 'justify' },
   textlink: { color: 'red', textDecorationLine: 'underline' },
+  image:{height:100,width:100,borderRadius:20,marginTop:20,alignSelf:"center"}
 });
