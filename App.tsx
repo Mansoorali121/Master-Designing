@@ -1,22 +1,18 @@
-import { StyleSheet, Text, View, Platform, ActivityIndicator } from 'react-native';
-import React from 'react';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.container}>
-    
-     <Text>Loader React Native</Text>
-     <ActivityIndicator size="large" color="red"/>
-    </SafeAreaView>
-  );
-};
+    <View style={{backgroundColor:"tomato",flex:1}}>
+      <View style={{flex:1,backgroundColor:"black"}}/>
+            <View style={{flex:1,backgroundColor:"salmon"}}/>
+      <View style={{flex:1,backgroundColor:"blue"}}/>
+
+
+    </View>
+  )
+}
 
 export default App;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor:"#fff"
-  },
-});
+const styles = StyleSheet.create({})
