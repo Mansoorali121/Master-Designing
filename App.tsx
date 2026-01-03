@@ -1,17 +1,13 @@
-import { Dimensions, StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-
+import {s, vs} from "react-native-size-matters"
 const App = () => {
-  const deviceheight = Dimensions.get("screen").height;
-  const devicewidth = Dimensions.get("screen").width;
   return (
-    <View style={{flex:1,backgroundColor:"white"}}>
-      {/* Device Height wtith Percentage Method */}
-      <View style={{height:deviceheight/2,width:devicewidth/1,backgroundColor:"black"}}>
-        {/* Now try Dimenstions */}
+    <View style={{backgroundColor:"#fff",flex:1}}>
+     <View style={{width:s(300),height:vs(600),backgroundColor:"tomato"
+     }}>
 
-
-      </View>
+     </View>
     </View>
   )
 }
