@@ -1,12 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { Backarrow } from '../assets/icons';
 
 const BackArrow = () => {
   return (
-    <View>
+    <TouchableOpacity>
       <Backarrow/>
-    </View>
+    </TouchableOpacity>
   )
 }
 
