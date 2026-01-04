@@ -4,9 +4,7 @@ import IntroScreen from "./src/Screens/IntroScreen"
 
 const App = () => {
   return (
-    <View>
-      <IntroScreen/>
-    </View>
+    <IntroScreen/>
   )
 }
 
