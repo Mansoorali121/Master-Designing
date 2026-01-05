@@ -15,7 +15,9 @@ const ContactusScreen = () => {
       </View>
 
       {/* Sociel Section Here */}
-      <SocialSection />
+      <View style={styles.socialContainer}>
+        <SocialSection />
+      </View>
     </View>
   );
 };
@@ -28,4 +30,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: s(17),
   },
   header: { flexDirection: 'row', justifyContent: 'space-between' },
+  socialContainer:{},
 });
+
