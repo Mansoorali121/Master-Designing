@@ -5,9 +5,9 @@ import { Sendicon, Whatsapp } from '../assets/icons';
 
 const SocialCircle = () => {
   return (
-    <TouchableOpacity style={styles.circle}>
+    <View style={styles.circle}>
       <Whatsapp/>
-    </TouchableOpacity>
+    </View>
   )
 }
 

@@ -19,11 +19,11 @@ const ContactusScreen = () => {
       {/* Sociel Section Here */}
       <View style={styles.socialContainer}>
         <Text style={styles.socialtext}>Social Media Platforms</Text>
-        <SocialSection />
-        <SocialSection /> 
-        <SocialSection /> 
-        <SocialSection /> 
-        <SocialSection />
+        <SocialSection  title="WhatsApp" />
+        <SocialSection   title="Twitter"/> 
+        <SocialSection   title="TikTok"/> 
+        <SocialSection  title="SnapChat" /> 
+        <SocialSection   title="Instagram"/>
       </View>
     </View>
   );
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   socialtext: { fontSize: s(16), color: '#0000', fontWeight: 'semibold' },
   screentitle: {
     fontSize: s(32),
-    color: '#fff',
+    color: '#0000',
     fontWeight: 'semibold',
     marginTop: vs(20),
     marginStart: s(19),

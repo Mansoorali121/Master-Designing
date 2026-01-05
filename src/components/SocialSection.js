@@ -3,13 +3,17 @@ import React from 'react';
 import SendButton from '../components/SendButton';
 import SocialCircle from '../components/SocialCircle';
 import { s, vs } from 'react-native-size-matters';
+import { Sendicon, Whatsapp } from '../assets/icons';
 
-const SocialSection = () => {
+const SocialSection = ({title}) => {
   return (
     <View style={styles.container}>
-      <SocialCircle />
+      {/* <SocialCircle /> */}  
+      <View style={styles.circle}>
+            <Whatsapp/>
+          </View>
 
-      <Text style={styles.socialtext}>WhatsApp</Text>
+      <Text style={styles.socialtext}>{title}</Text>
       {/* Social Names */}
       <SendButton />
     </View>
@@ -32,4 +36,13 @@ const styles = StyleSheet.create({
     color: '#8083A3',
     fontSize: s(12),
   },
+  circle:{height:s(46),
+        width:s(46),
+        borderRadius:s(40),
+        backgroundColor:"#fff",
+        justifyContent:"center",
+        alignItems:"center",
+        borderWidth:s(1),
+        borderColor:"#E4E6E8"
+    },
 });
