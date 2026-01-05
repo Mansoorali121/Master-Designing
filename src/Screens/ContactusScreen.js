@@ -13,9 +13,12 @@ const ContactusScreen = () => {
         <BackArrow />
         <UserAvatar />
       </View>
+      {/* Contact Us Text */}
+      <Text style={styles.screentitle}>Contat Us</Text>
 
       {/* Sociel Section Here */}
       <View style={styles.socialContainer}>
+        <Text style={styles.socialtext}>Social Media Platforms</Text>
         <SocialSection />
       </View>
     </View>
@@ -30,6 +33,19 @@ const styles = StyleSheet.create({
     paddingHorizontal: s(17),
   },
   header: { flexDirection: 'row', justifyContent: 'space-between' },
-  socialContainer:{},
+  socialContainer: {
+    backgroundColor: '#F5F5FA',
+    borderRadius: s(14),
+    paddingHorizontal: s(20),
+    marginVertical: vs(16),
+    marginTop: vs(22),
+  },
+  socialtext: { fontSize: s(16), color: '#0000', fontWeight: 'semibold' },
+  screentitle: {
+    fontSize: s(32),
+    color: '#fff',
+    fontWeight: 'semibold',
+    marginTop: vs(20),
+    marginStart: s(19),
+  },
 });
-
