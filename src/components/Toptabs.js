@@ -8,9 +8,9 @@ const Toptabs = () => {
   // Tabs Active Color
   const Active_Bg = '#75563B';
   //  Active Text
-  const Active_Text = '#FFFFF';
+  //   const Active_Text = '#FFFFF';
   //  InActive Text
-  const InActive_Text = '#2C2016';
+  //   const InActive_Text = '#2C2016';
 
   const [activetab, setActivetab] = useState('Recorded');
 
@@ -19,12 +19,21 @@ const Toptabs = () => {
       {Tabsarray.map(tabname => {
         return (
           <TouchableOpacity
+            onPress={() => setActivetab(tabname)}
             style={[
               styles.tabs,
               activetab === tabname && { backgroundColor: Active_Bg },
             ]}
           >
-            <Text >{tabname}</Text>
+            <Text
+              style={
+                activetab === tabname
+                  ? styles.Active_Text
+                  : styles.InActive_Text
+              }
+            >
+              {tabname}
+            </Text>
           </TouchableOpacity>
         );
       })}
@@ -50,5 +59,14 @@ const styles = StyleSheet.create({
     borderRadius: s(8),
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  Active_Text: {
+    color: '#ffff',
+    fontSize: s(14),
+    fontWeight: 'semibold',
+  },
+  InActive_Text: {
+    color: '#2C2016',
+    fontSize: s(14),
   },
 });
