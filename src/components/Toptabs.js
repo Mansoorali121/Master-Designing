@@ -20,6 +20,7 @@ const Toptabs = () => {
         return (
           <TouchableOpacity
             onPress={() => setActivetab(tabname)}
+            key={tabname}
             style={[
               styles.tabs,
               activetab === tabname && { backgroundColor: Active_Bg },
