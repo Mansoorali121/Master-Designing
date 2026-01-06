@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { s, vs } from 'react-native-size-matters';
 import Toptabs from "../components/Toptabs"
+import MeditationCard from "../components/MeditationCard"
 
 const HomeScreen = () => {
   return (
@@ -9,6 +10,7 @@ const HomeScreen = () => {
       <Text style={styles.headertext}>Meditations</Text>
       <Text style={styles.dummytext}>Lorem Ispum is simply dummy text</Text>
       <Toptabs/>
+      <MeditationCard/>
     </View>
   )
 }

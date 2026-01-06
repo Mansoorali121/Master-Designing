@@ -4,7 +4,7 @@ import { s, vs } from 'react-native-size-matters';
 
 const Toptabs = () => {
   //  Tabs Array
-  const Tabsarray = ['Live', 'Recorded'];
+  const Tabsarray = ['Live', 'Recorded','Videos'];
   // Tabs Active Color
   const Active_Bg = '#75563B';
   //  Active Text

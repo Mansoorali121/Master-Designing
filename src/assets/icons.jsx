@@ -18,7 +18,7 @@ export const Sendicon = (props:SvgProps) => (
   </Svg>
 );
 
-export const VideoIcon = (props:SvgProps) => (
+export const VideoIcon = (props) => (
   <Svg
     width={16}
     height={17}
