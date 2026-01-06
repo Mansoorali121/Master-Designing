@@ -23,7 +23,7 @@ const ContactusScreen = () => {
         <SocialSection   title="Twitter"/> 
         <SocialSection   title="TikTok"/> 
         <SocialSection  title="SnapChat" /> 
-        <SocialSection   title="Instagram"/>
+        <SocialSection   title=""/>
       </View>
     </View>
   );
