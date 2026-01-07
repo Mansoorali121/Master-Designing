@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import Backarrow from '../components/Backarrow';
 import { s, vs } from 'react-native-size-matters';
-import Paymentmethod from "../components/Paymentmethod"
+import Paymentmethod from '../components/Paymentmethod';
 
 const Paymentscreen = () => {
   return (
@@ -12,7 +12,8 @@ const Paymentscreen = () => {
         <Text style={styles.headertitle}>Payment</Text>
       </View>
       {/* Payment method card */}
-      <Paymentmethod/>
+      <Paymentmethod />
+      <Paymentmethod isSelected={true} />
     </View>
   );
 };
