@@ -1,18 +1,19 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import React from 'react';
 import { CashICon } from '../assets/icons';
 import { s, vs } from 'react-native-size-matters';
-
-const Paymentmethod = ({ isSelected = false }) => {
+import { SVGComponent } from '../assets/icons';
+const Paymentmethod = ({ isSelected = false ,title, icon, onPress}) => {
   return (
-    <View style={{ width: s(85) }}>
+    <TouchableOpacity onPress={onPress} style={{ width: s(85) }}>
         {isSelected && <View style={styles.checkmarkcontainer}>
+          <SVGComponent/>
             </View>}
       <View style={[styles.card, isSelected && styles.selectedcardstyle]}>
-        <CashICon />
+        {icon}
       </View>
-      <Text style={styles.cashtext}>Cash</Text>
-    </View>
+      <Text style={styles.cashtext}>{title}</Text>
+    </TouchableOpacity>
   );
 };
 
@@ -47,7 +48,9 @@ const styles = StyleSheet.create({
     backgroundColor:"#FF7622",
     position:"absolute",
     zIndex:1,
-    top:s(-10),
-    right:s(-10)
+    top:s(-8),
+    right:s(-8),
+    justifyContent:"center",
+    alignItems:"center"
   },
 });

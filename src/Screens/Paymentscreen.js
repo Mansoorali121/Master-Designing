@@ -3,6 +3,7 @@ import React from 'react';
 import Backarrow from '../components/Backarrow';
 import { s, vs } from 'react-native-size-matters';
 import Paymentmethod from '../components/Paymentmethod';
+import PaymentList from "../components/PaymentList"
 
 const Paymentscreen = () => {
   return (
@@ -12,8 +13,9 @@ const Paymentscreen = () => {
         <Text style={styles.headertitle}>Payment</Text>
       </View>
       {/* Payment method card */}
-      <Paymentmethod />
-      <Paymentmethod isSelected={true} />
+      {/* <Paymentmethod title="Cash" />
+      <Paymentmethod isSelected={true} /> */}
+      <PaymentList/>
     </View>
   );
 };
@@ -21,7 +23,7 @@ const Paymentscreen = () => {
 export default Paymentscreen;
 
 const styles = StyleSheet.create({
-  container: { flex: 1, paddingTop: vs(20), paddingHorizontal: s(20) },
+  container: { flex: 1, paddingTop: vs(20), paddingHorizontal: s(16) },
   headertitle: { fontSize: s(17), color: '#181C2E', marginStart: s(12) },
   headercontainer: {
     flexDirection: 'row',
