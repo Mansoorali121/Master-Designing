@@ -4,6 +4,7 @@ import Backarrow from '../components/Backarrow';
 import { s, vs } from 'react-native-size-matters';
 import Paymentmethod from '../components/Paymentmethod';
 import PaymentList from "../components/PaymentList"
+import BankCard from "../components/BankCard"
 
 const Paymentscreen = () => {
   return (
@@ -16,6 +17,9 @@ const Paymentscreen = () => {
       {/* <Paymentmethod title="Cash" />
       <Paymentmethod isSelected={true} /> */}
       <PaymentList/>
+      <View style={{paddingHorizontal:s(16)}}>
+        <BankCard/>
+      </View>
     </View>
   );
 };
