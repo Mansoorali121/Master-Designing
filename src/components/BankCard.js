@@ -13,7 +13,7 @@ const BankCard = () => {
         fontWeight:"bold",
         marginTop:vs(17)
       }}>No master card added</Text>
-      <Text style={{}}>You can add master card and save it for later</Text>
+      <Text style={{color:'#2D2D2D', fontSize:s(15),marginTop:vs(6),textAlign:"center"}}>You can add master card and save it for later</Text>
     </View>
   )
 }
@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
         marginTop:vs(25),
         justifyContent:"center",
         alignItems:"center",
-        paddingTop:vs(35)
+        paddingTop:vs(35),
+        paddingHorizontal:s(30)
     },
 })
